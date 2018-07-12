@@ -7,6 +7,11 @@ font-style: normal;
 font-weight: normal;
 src: local('Akrobat ExtraBold'), url('Akrobat-ExtraBold.woff') format('woff');
 }
+@font-face {
+	font-family: 'MYRIADPROREGULAR';
+	src: url('./MYRIADPROREGULAR.eot');
+	src: local('MYRIADPROREGULAR'), url('./MYRIADPROREGULAR.woff') format('woff'), url('./MYRIADPROREGULAR.ttf') format('truetype');
+}
 
 img {
 	width: 100%;
@@ -18,6 +23,9 @@ img {
 	margin: 0 auto;
 }
 header {
+}
+section {
+	padding: 15px 0px;
 }
 .header1 {
 	background-color: #163b63;
@@ -101,9 +109,11 @@ p {
 	background-image:url(../img/bg.png);
 }
 .parallax {
-	height: 300px;
+	height: 260px;
 	background-image:url(../img/bg2.png);
-	position:relative;
+	position:relative;/* 
+	background-origin: content-box;
+	background-attachment: fixed; */
 }
 .parallax-in {
 	background-color:rgba(247,165,13,0.83);
@@ -111,6 +121,16 @@ p {
 	position:absolute;
 	width: 100%;
 	height: 100%;
+}
+.parallax-in p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 46px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	padding: 60px 0px;
 }
 .intro1 {
 	width: 65%;
@@ -120,6 +140,7 @@ p {
 	font-family: 'Akrobat ExtraBold';
 	color: #264b73;
 	font-size:47px;
+	margin-bottom: 15px;
 }
 .intro1, .intro2 {
 	display: inline-block;
@@ -150,9 +171,118 @@ p {
 	padding: 0px 15px;
     line-height: 28px;
 }
-.intro-2 {
+.intro2 {
 	line-height:28px;
 }
-
-
-
+.intro2 .heading {
+	font-family: 'Akrobat ExtraBold';
+	color: #f36301;
+	font-size:40px;	
+}
+.event {
+	background-color: #eee;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.event-img {
+	margin-bottom: 10px;
+}
+.event-des h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.u-col {
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+	width: 50%;
+	color: #555;
+}
+.u-col i {
+	margin-right: 4px;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.event-para {
+	margin-top: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+button.u-btn {
+	background-color: #f36301;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: none;
+	padding: 5px 16px;
+}
+.services {
+	padding: 30px 0px;
+}
+.services .heading, #u_videos .heading {
+	font-family: 'Akrobat ExtraBold';
+	color: #565656;
+	font-size:40px;
+	text-transform: uppercase;
+}
+.services .head p, #u_videos .head p {
+	font-family: 'MYRIADPROREGULAR';
+	font-size: 16px;
+	color: #565656;
+}
+.services .head, #u_videos .head {
+	margin-bottom: 30px;
+}
+.ser-sec {
+	width: 100%;
+}
+.ser {
+	width: 33.33%;
+	display: inline-block;
+	margin-right: -4px;
+}
+.ser-in {
+	padding: 30px;
+	text-align: center;
+}
+.ser-in h3 {
+	text-transform: uppercase;
+	font-family: 'Akrobat ExtraBold';
+	color: #565656;
+	font-size:28px;
+	margin-bottom: 50px;
+}
+.ser-in img {
+	width: 100px;
+}
+.ser-in p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	line-height: 26px;
+	color: #565656;
+	font-size: 16px;
+	margin: 30px 0px;
+}
+.ser-in button {
+	padding: 6px 16px;
+	background-color: #f36301;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+}
+.videos {
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+}
+.videos .video {
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+}
