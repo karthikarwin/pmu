@@ -12,6 +12,14 @@ src: local('Akrobat ExtraBold'), url('Akrobat-ExtraBold.woff') format('woff');
 	src: url('./MYRIADPROREGULAR.eot');
 	src: local('MYRIADPROREGULAR'), url('./MYRIADPROREGULAR.woff') format('woff'), url('./MYRIADPROREGULAR.ttf') format('truetype');
 }
+@font-face {
+	font-family: 'Conv_OratorStd';
+	src: url('fonts/OratorStd.eot');
+	src: local('☺'), url('fonts/OratorStd.woff') format('woff'), url('fonts/OratorStd.ttf') format('truetype'), url('fonts/OratorStd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 html {
 	margin: 0;
@@ -234,7 +242,7 @@ button.u-btn {
 	font-size: 16px;
 	text-transform: uppercase;
 	border: none;
-	padding: 5px 16px;
+	padding: 7px 20px;
 }
 .services {
 	padding: 30px 0px;
@@ -505,3 +513,224 @@ li.archieve_list_item {
 	padding: 6px 3px;
 	border-bottom: 1px solid #f362019c;
 }
+form > div {
+	position: relative;
+}
+form > div > label {
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	transition: all 0.5s ease-in-out;
+	text-transform: uppercase;
+	opacity: 0.4;
+}
+form > div > input, form > div > textarea {
+	width: 100%;
+	border: none;
+	padding: 5px;
+	border-bottom: 1px solid #264b73;
+}
+input:focus, textarea:focus {
+	outline: none;
+	border-bottom: 1px solid #f36301;
+}
+input:focus + label, textarea:focus + label {
+	/* do something with the label */
+	top: -25px;
+    left: 0px;
+	font-size: 13px;
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+.formrow {
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+.contForm, .address {
+	display: inline-block;
+	width: 50%;
+	margin-right: -5px;
+	padding: 10px;
+	vertical-align: top;
+}
+#map {
+	padding: 0;
+	height: 450px;
+}
+#pillars {
+	background-color: #f1f1f1;
+}
+#pillars h4.blog_title {
+	margin-bottom: 0px;
+	font-size: 35px;
+	color: #444;
+	padding-top: 20px;
+}
+.logos {
+	width: 100%;
+	padding: 30px 0px;
+}
+.logos .pillarlogo {
+	width: 33.33%;
+	margin-right: -5px;
+	display: inline-block;
+	vertical-align: middle;
+	/* padding: 10px 60px; */
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.pillarlogo img {
+}
+/* .aac img {
+	width: 200px !important;
+}
+.math img {
+	width: 360px;
+}
+.vinayak img {
+	width: 300px;
+} */
+
+.conthead.heading {
+	text-transform: uppercase;
+}
+.address {
+	padding: 10px 20px;
+}
+.address1 {
+	width: 100%;
+	padding: 20px;
+}
+.addressicon {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -5px;
+	padding: 5px 20px;
+	text-align: center;
+}
+.addressicon img {
+	width: 50px;
+	height:auto;
+}
+.addresspara {
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -5px;
+}
+.soci-icons {
+	padding: 10px 65px;
+}
+.soci-icons .soc_icons {
+	text-align: left;
+	font-size: 30px;
+}
+h2.new {
+	font-family: 'Conv_OratorStd';
+}
+.introdiv {
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -5px;
+	padding: 10px 30px;
+}
+p.sub-head {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+h6.secondtitle {
+	font-family: 'Akrobat ExtraBold';;
+	font-size:28px;
+	text-transform: uppercase;
+}
+.introo2-2 p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+.missionpara {
+	width: 70%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -5px;
+}
+.missionimg {
+	width: 30%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -5px;
+	text-align: right;
+}
+.missionimg img {
+	width: 80%;
+}
+.introo2-1, .introo2-2 {
+	margin-bottom: 20px;
+}
+.skillspara p {
+	font-family: 'Raleway';
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+}
+.skillspara, .skillsgraph {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -5px;
+	padding: 30px 30px;
+	box-sizing: border-box;
+}
+.skillspara {
+	width: 40%;
+}
+.skillsgraph {
+	width: 60%;
+}
+.skillspara .secondtitle {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.sk-gr {
+	margin-bottom: 15px;
+}
+.sk-gr label {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.sk-gr .pr-bar {
+	width: 100%;
+	background-color: #eee;
+	height: 7px;
+	position: relative;
+}
+.pr-bar .in {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #f36301;
+}
+#ind-train .in {
+	width: 90%;
+}
+#seminars .in {
+	width: 75%;
+}
+#projects .in {
+	width: 85%;
+}
+.ab1-par .parallax-in {
+	background-color: #35597bde
+}
+.ab1-par .parallax-in p {
+	font-weight: 100;
+}
+
+
+
