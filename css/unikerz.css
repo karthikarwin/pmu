@@ -19,6 +19,27 @@ src: local('Akrobat ExtraBold'), url('Akrobat-ExtraBold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Conv_Buntype - BundayClean-Bold';
+	src: url('fonts/Buntype - BundayClean-Bold.eot');
+	src: local('☺'), url('fonts/Buntype - BundayClean-Bold.woff') format('woff'), url('fonts/Buntype - BundayClean-Bold.ttf') format('truetype'), url('fonts/Buntype - BundayClean-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Buntype - BundayClean-SeBoldUp';
+	src: url('fonts/Buntype - BundayClean-SeBoldUp.eot');
+	src: local('☺'), url('fonts/Buntype - BundayClean-SeBoldUp.woff') format('woff'), url('fonts/Buntype - BundayClean-SeBoldUp.ttf') format('truetype'), url('fonts/Buntype - BundayClean-SeBoldUp.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Buntype - BundayClean-SeLighUpIt';
+	src: url('fonts/Buntype - BundayClean-SeLighUpIt.eot');
+	src: local('☺'), url('fonts/Buntype - BundayClean-SeLighUpIt.woff') format('woff'), url('fonts/Buntype - BundayClean-SeLighUpIt.ttf') format('truetype'), url('fonts/Buntype - BundayClean-SeLighUpIt.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 html {
@@ -121,7 +142,7 @@ p {
 	text-decoration:none;
 }
 .slider {
-	height: 500px;
+	height: 450px;
 	background-image:url(../img/bg.png);
 }
 .parallax {
@@ -425,13 +446,13 @@ footer {
 	color: #565656;
 	font-size: 16px;
 }
-#blog_main, #blog_side {
+#blog_main, #blog_side, #video_main {
 	display: inline-block;
 	vertical-align: top;
 	height: auto;
 	margin-right: -5px;
 }
-#blog_main {
+#blog_main, #video_main {
 	width: 70%;
 }
 #blog_side {
@@ -895,3 +916,77 @@ section#myteam, #whyus {
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
 }
+#video_main .video {
+	width: 33.33%;
+}
+#video_main {
+	width: 75%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -5px;
+	box-sizing: border-box;
+	padding: 0px 10px 30px 0px;
+}
+#video_side {
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -5px;
+	box-sizing: border-box;
+	padding: 0px 0px 30px 10px;
+}
+#video_main .video {
+	width: 45%;
+    margin: 1.5%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#video_main .layer .vid-det {
+	padding: 50px 0px 0px 15px;
+}
+
+
+.home-slider {
+	position: relative;
+}
+
+.site-heading {
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.site-heading h6 {
+	font-family: 'Conv_Buntype - BundayClean-Bold';
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 10px 25px;
+	background-color: #f36301;
+	margin: 0;
+	letter-spacing: 1px;
+	width: auto;
+	display: inline-block;
+}
+.site-heading h2 {
+	font-family: Calibri;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+}
+.site-heading p {
+	font-family: 'Conv_Buntype - BundayClean-SeLighUpIt';
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	font-style: italic;
+	font-weight: 100;
+	width: 90%;
+}
+
+
+
