@@ -1,5 +1,11 @@
 <?php
-	include_once("header.php");
+session_start();
+    if(!isset( $_SESSION['user'] )) {
+        header('Location: ./login.php');
+        exit;
+    } else {
+        include_once('process/db.php');
+	    include_once("header.php");
 ?>
 
 <div class="main">
@@ -20,5 +26,6 @@
 </div>	
 
 <?php
-	include_once("footer.php");
+    include_once("footer.php");
+    }
 ?>

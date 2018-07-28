@@ -1,5 +1,11 @@
 <?php
-	include_once("header.php");
+session_start();
+    if(!isset( $_SESSION['user'] )) {
+        header('Location: ./login.php');
+        exit;
+    } else {
+        include_once('process/db.php');
+	    include_once("header.php");
 ?>
 
 <div class="main">
@@ -15,46 +21,27 @@
     	<div class="container-fluid">
             <div class="blog">
                 <div class="row">
+                    <?php
+                        $query = "SELECT * FROM posts";
+
+                        $exec = mysqli_query($conn, $query);
+
+                        while( $fetch = mysqli_fetch_array($exec) ) {
+                            $date = date_create($fetch['u_date']);
+                    ?>
                 	<div class="col col-sm-3">
                     	<div class="card">
-                          <img class="card-img-top" src="http://www.aakkamcreations.com/unikerz/img/blog2.png" alt="Card image cap">
+                          <img class="card-img-top" src="<?php echo $fetch['u_img']; ?>" alt="Card image cap">
                           <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title"><?php echo $fetch['u_title']; ?></h5>
+                            <p class="card-text"><?php echo $fetch['u_description']; ?></p>
+                            <p><i><?php echo date_format($date, 'd-m-Y'); ?></i></p>
                           </div>
                         </div>
                     </div>
-                    <div class="col col-sm-3">
-                    	<div class="card">
-                          <img class="card-img-top" src="http://www.aakkamcreations.com/unikerz/img/blog2.png" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col col-sm-3">
-                    	<div class="card">
-                          <img class="card-img-top" src="http://www.aakkamcreations.com/unikerz/img/blog2.png" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col col-sm-3">
-                    	<div class="card">
-                          <img class="card-img-top" src="http://www.aakkamcreations.com/unikerz/img/blog2.png" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    ?>
                 </div>       
             </div>
         </div>
@@ -62,5 +49,6 @@
 </div>	
 
 <?php
-	include_once("footer.php");
+    include_once("footer.php");
+    }
 ?>

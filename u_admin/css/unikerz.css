@@ -27,7 +27,7 @@ ul.menu-items {
 	height: 150px;
 }
 .menu {
-	background-color: #F08104;
+	background-color: #163b63;
 	padding: 12px 0px;
 }
 ul.menu-items li:first-child {
@@ -199,4 +199,22 @@ footer {
 	margin: 0;
 	font-size:12px;
 }
-
+.logout {
+	margin-left: auto;
+}
+.logout button {
+	border: 1px solid #163b63;
+	background-color: transparent;
+	color: #163b63;
+}
+.logout button:hover {
+	background-color: #163b63;
+	color: #fff;
+}
+.logout a {
+	color: inherit;
+	text-decoration: none;
+}
+.card {
+	margin-bottom: 20px;
+}
