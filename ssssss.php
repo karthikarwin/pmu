@@ -1,6 +1,6 @@
 <div class="header-main">
 					<div class="logo-w3-agile">
-								<h1><a href="index.html">Pooled</a></h1>
+								<h1><a href="index.php">Pooled</a></h1>
 							</div>
 					<div class="w3layouts-left">
 							

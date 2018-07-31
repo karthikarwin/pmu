@@ -18,12 +18,71 @@ session_start();
     </section>
     
     <section id="main">
-    	<div class="welcome">
-            <h1>Welcome to Admin Panel</h1>
-            <h3>UNIKERZ</h3>        
+    	<div class="container-fluid">
+            <div class="button ml-2 mt-2 text-left">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Add New Event
+                </button>
+            </div>
+            <div class="blog">
+                <div class="row">
+                    <?php
+                        $query = "SELECT * FROM events";
+
+                        $exec = mysqli_query($conn, $query);
+
+                        while( $fetch = mysqli_fetch_array($exec) ) {
+                            $date = date_create($fetch['u_date']);
+                    ?>
+                	<div class="col col-sm-3">
+                    	<div class="card">
+                          <img class="card-img-top" src="<?php echo $fetch['u_img']; ?>" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title"><?php echo $fetch['u_title']; ?></h5>
+                            <p class="card-text"><?php echo $fetch['u_desc']; ?></p>
+                            <p><i><?php echo date_format($date, 'd-m-Y'); ?></i></p>
+                          </div>
+                        </div>
+                    </div>
+                    <?php
+                        }
+                    ?>
+                </div>       
+            </div>
         </div>
     </section>
-</div>	
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add New Event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="process/event_process.php" method="post" enctype="multipart/form-data">
+        <div class="modal-body">
+            <div class="form-group">
+                <input type="text" name="title" class="form-control" placeholder="Enter Event Title">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="body" rows="5" placeholder="Enter Event Content"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file-event">Choose Featured Image</label>
+                <input type="file" name="imag" id="file-event" class="form-control" placeholder="Enter Featured Image" accept="image/*">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="reset" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary" name="addevent">Add Event</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 <?php
     include_once("footer.php");

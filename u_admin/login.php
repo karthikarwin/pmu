@@ -16,7 +16,7 @@ session_start();
           </div>
           <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="text" class="form-control" placeholder="Enter Username" name="username">
+          <input type="text" class="form-control" placeholder="Enter Username" name="username" autofocus>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>

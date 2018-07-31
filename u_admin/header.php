@@ -28,7 +28,7 @@ include_once("process/db.php");
           <div class="form-inline logout" id="navbarNavDropdown">
           <?php
             if(isset($_SESSION['user'])) {
-              echo '<button class="btn btn-outline-dark"><a href="logout.php">Logout</a></button>';
+              echo '<button class="btn btn-outline-light"><a href="logout.php">Logout</a></button>';
             }
           ?>
           </div>

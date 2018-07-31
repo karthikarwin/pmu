@@ -54,28 +54,28 @@
             	<div class="u_main_menu">
                 	<ul class="main-menu">
                     	<li class="menu-item">
-                        	<a href="index.html">HOME</a>	
+                        	<a href="index.php">HOME</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="about.html">about us</a>	
+                        	<a href="about.php">about us</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="training.html">training</a>	
+                        	<a href="training.php">training</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="index.html">other services</a>	
+                        	<a href="index.php">other services</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="blog.html">blog</a>	
+                        	<a href="blog.php">blog</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="index.html">events & gallery</a>	
+                        	<a href="index.php">events & gallery</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="video.html">training videos</a>	
+                        	<a href="video.php">training videos</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="contact.html">contact us</a>	
+                        	<a href="contact.php">contact us</a>	
                         </li>
                     </ul>
                 </div>
@@ -84,91 +84,107 @@
     </header>
     <section id="u_slider">
     	<div class="blog-header  headerr">
-        	<div class="u_wrapper">
+            <div class="u_wrapper">
                 <div class="breadcrump">
-                    <h3>Training</h3>
-                    <p><a href="index.html">Home</a> / Training</p>
+                    <h3>Contact Us</h3>
+                    <p><a href="index.php">Home</a> / Contact Us</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="page_title">
+    <div class="u_wrapper">
+        <section id="page_title">
+            <h2 class="conthead heading">We’re ready, Let’s talk.</h2>
+            <p>Contact us to find out more or how we can help you better.</p>
+        </section>
 
-    </section>
-
-    <section id="train-intro">
-        <div class="u_wrapper">
-        <div class="head">
-            <h2 class="heading">TRAINING PROGRAMME</h2>
-        </div>
-        <div class="row train-body">
-            <div class="train-left col-7">
-                <p>The ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
-
-                <p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adip isci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostr um exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea volupt ate velit esse quam nihil molestiae consequatur</p>
+        <section id="formAddress">
+            <div class="contForm">
+                <form action="contact.php">
+                    <div class="formrow">
+                        <input id="name" name="name" type="text" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="formrow">
+                        <input id="email" name="email" type="email" required>
+                        <label for="email">Email address</label>
+                    </div>
+                    <div class="formrow">
+                        <input id="mobile" name="mobile" type="text" required>
+                        <label for="mobile">mobile</label>
+                    </div>
+                    <div class="formrow">
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="formrow text-right">
+                        <button class="u-btn">send</button>
+                    </div>
+                </form>
             </div>
-            <div class="train-right col-5">
-                <img src="img/train.png" alt="TRAINING">
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section id="u_service">
-        <div class="u_wrapper">
-        <div class="services">
-            <div class="head">
-                <h2 class="heading">Programme Features</h2>
-                <p>The ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
-            </div>
-            <div class="ser-sec">
-                <div class="ser ser1">
-                    <div class="ser-in">
-                        <h3>Training</h3>
-                        <img src="img/icon1.png" alt="">
-                        <p>It’s a place engineers can rely on for Quality Training. We are committed to driving the right ...</p>
-                        <button>Read More</button>
+            <div class="address">
+                <div class="address1">
+                    <div class="addressicon">
+                        <img src="img/location.png" alt="Location">
+                    </div>
+                    <div class="addresspara">
+                        <p>
+                            No : 34/1 cross street,<br>
+                            mudali stree, addambakkam<br>
+                            chennai -600034.
+                        </p>
                     </div>
                 </div>
-                <div class="ser ser1">
-                    <div class="ser-in">
-                        <h3>Other services</h3>
-                        <img src="img/icon2.png" alt="">
-                        <p>Presentation of theory is easy, but the development of a top performing professional is not. </p>
-                        <button>Read More</button>
+                <div class="address1">
+                    <div class="addressicon">
+                        <img src="img/contect.png" alt="Contact">
+                    </div>
+                    <div class="addresspara">
+                        <p>
+                            +91 98406 07659<br>
+                            +91 73737 46111<br>
+                            +91 044 58482821
+                        </p>
                     </div>
                 </div>
-                <div class="ser ser1">
-                    <div class="ser-in">
-                        <h3>Seminars</h3>
-                        <img src="img/icon3.png" alt="">
-                        <p>Our participants come from wide range of engineering including Electrical, Electronics, </p>
-                        <button>Read More</button>
+                <div class="address1">
+                    <div class="addressicon">
+                        <img src="img/mail.png" alt="Mail">
+                    </div>
+                    <div class="addresspara">
+                        <p>
+                            support@unikerz.org<br>
+                            support@unikerz.org
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section id="whocan">
-        <div class="u_wrapper">
-            <div class="head">
-                <h2 class="heading">TRAINING PROGRAMME</h2>
-                <p>The ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit</p>
-            </div>
-            <div class="row whocan-body">
-                <div class="col col-6 text-center">
-                    <img src="img/graduates.png" alt="GRADUATES">
-                    <h3>GRATUATES</h3>
+                <div class="soci-icons">
+                    <h6>FOLLOW US</h6>
+                    <ul class="soc_icons">
+                        <li class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                        <li class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                        <li class="icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </li>
+                        <li class="icon">
+                            <i class="fab fa-google-plus-g"></i>
+                        </li>
+                        <li class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col col-6 text-center">
-                    <img src="img/workers.png" alt="WORKING PROFESSIONALS">
-                    <h3>WORKING PROFESSIONALS</h3>
-                </div>
             </div>
-        </div>
+        </section>
+    </div>
+    
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6789726708885!2d80.19692541419023!3d12.992373117938962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52673bf96345bf%3A0x7fa3f00ecc3021c!2sUnikerz+technologies+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1531647945249" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
     <section id="pillars">

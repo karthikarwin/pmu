@@ -55,28 +55,28 @@
             	<div class="u_main_menu">
                 	<ul class="main-menu">
                     	<li class="menu-item">
-                        	<a href="index.html">HOME</a>	
+                        	<a href="index.php">HOME</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="about.html">about us</a>	
+                        	<a href="about.php">about us</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="training.html">training</a>	
+                        	<a href="training.php">training</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="index.html">other services</a>	
+                        	<a href="index.php">other services</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="blog.html">blog</a>	
+                        	<a href="blog.php">blog</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="index.html">events & gallery</a>	
+                        	<a href="index.php">events & gallery</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="video.html">training videos</a>	
+                        	<a href="video.php">training videos</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="contact.html">contact us</a>	
+                        	<a href="contact.php">contact us</a>	
                         </li>
                     </ul>
                 </div>
@@ -88,7 +88,7 @@
             <div class="u_wrapper">
                 <div class="breadcrump">
                     <h3>About Us</h3>
-                    <p><a href="index.html">Home</a> / About Us</p>
+                    <p><a href="index.php">Home</a> / About Us</p>
                 </div>
             </div>
         </div>

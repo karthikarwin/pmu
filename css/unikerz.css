@@ -887,10 +887,10 @@ section#myteam, #whyus {
 }
 .video .layer {
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 75px;
 	background-color: rgba(0,0,0,0.8);
 	color: #fff;
 	opacity: 0;
@@ -900,13 +900,13 @@ section#myteam, #whyus {
 	text-align: center;
 	padding: 100px 0px 0px 0px;
 }
-.play img {
+/* .play img {
 	width: 50px;
 	cursor: pointer;
 	margin-bottom: 6px;
-}
+} */
 .layer .vid-det {
-	padding: 35px 0px 0px 15px;
+	padding: 10px 0px 0px 10px;
 }
 .layer .vid-det * {
 	margin:0;
@@ -943,7 +943,7 @@ section#myteam, #whyus {
 }
 
 #video_main .layer .vid-det {
-	padding: 50px 0px 0px 15px;
+	padding: 10px 0px 0px 15px;
 }
 
 

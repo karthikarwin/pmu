@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  include_once('u_admin/process/db.php');
+?>
 <!doctype html>
 <html>
 <head>
@@ -54,28 +58,28 @@
             	<div class="u_main_menu">
                 	<ul class="main-menu">
                     	<li class="menu-item">
-                        	<a href="index.html">HOME</a>	
+                        	<a href="index.php">HOME</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="about.html">about us</a>	
+                        	<a href="about.php">about us</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="training.html">training</a>	
+                        	<a href="training.php">training</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="index.html">other services</a>	
+                        	<a href="index.php">other services</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="blog.html">blog</a>	
+                        	<a href="blog.php">blog</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="index.html">events & gallery</a>	
+                        	<a href="index.php">events & gallery</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="video.html">training videos</a>	
+                        	<a href="video.php">training videos</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="contact.html">contact us</a>	
+                        	<a href="contact.php">contact us</a>	
                         </li>
                     </ul>
                 </div>
@@ -86,8 +90,8 @@
     	<div class="blog-header  headerr">
             <div class="u_wrapper">
                 <div class="breadcrump">
-                    <h3>Training Videos</h3>
-                    <p><a href="index.html">Home</a> / Training Videos</p>
+                    <h3>Blog</h3>
+                    <p><a href="index.php">Home</a> / Blog</p>
                 </div>
             </div>
         </div>
@@ -95,69 +99,45 @@
 
     <div class="u_wrapper">
         <section id="page_title">
-            <h2 class="heading">OUR VIDEOS</h2>
+            <h2 class="heading">WELCOME TO OUR BLOG</h2>
             <p>Our posts will be displayed here</p>
         </section>
 
-        <section id="video_main">
-            <div class="videos">
-                <div class="video">
-                    <img src="img/vid1.png" alt="">
-                    <div class="layer">
-                        <div class="play">
-                            <img src="img/play.png" alt="">
-                            <p>Watch Now</p>
+        <section id="blog_main">
+            <div class="blog_in">
+                <?php
+                    $query = "SELECT * FROM posts";
+
+                    $exec = mysqli_query($conn, $query);
+
+                    while( $fetch = mysqli_fetch_array($exec) ) {
+                        $date = date_create($fetch['u_date']);
+                ?>
+                <div class="blog_card">
+                    <div class="blog_img">
+                        <img src="u_admin/<?php echo $fetch['u_img']; ?>" alt="blog">
+                        <div class="date">
+                            <h6><?php echo date_format($date, 'd'); ?></h6>
+                            <p style="text-transform: uppercase;"><?php echo date_format($date, 'M'); ?></p>
                         </div>
-                        <div class="vid-det">
-                            <h5>LATEST EPISODE</h5>
-                            <span>March 18, 2018</span>
-                        </div>
+                    </div>
+                    <div class="blog_des">
+                        <h4 class="blog_title"><?php echo $fetch['u_title']; ?></h4>
+                        <p class="blog_des_p"><?php echo $fetch['u_description']; ?></p>
+                        <a href="#" class="link">Read More >>> </a>
                     </div>
                 </div>
-                <div class="video">
-                    <img src="img/vid2.png" alt="">
-                    <div class="layer">
-                        <div class="play">
-                            <img src="img/play.png" alt="">
-                            <p>Watch Now</p>
-                        </div>
-                        <div class="vid-det">
-                            <h5>LATEST EPISODE</h5>
-                            <span>March 18, 2018</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="video">
-                    <img src="img/vid3.png" alt="">
-                    <div class="layer">
-                        <div class="play">
-                            <img src="img/play.png" alt="">
-                            <p>Watch Now</p>
-                        </div>
-                        <div class="vid-det">
-                            <h5>LATEST EPISODE</h5>
-                            <span>March 18, 2018</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="video">
-                    <img src="img/vid1.png" alt="">
-                    <div class="layer">
-                        <div class="play">
-                            <img src="img/play.png" alt="">
-                            <p>Watch Now</p>
-                        </div>
-                        <div class="vid-det">
-                            <h5>LATEST EPISODE</h5>
-                            <span>March 18, 2018</span>
-                        </div>
-                    </div>
+                <?php
+                    }
+                ?>
+                <div class="view_more">
+                    <button class="view_more_btn">VIEW MORE</button>
                 </div>
             </div>
         </section>
 
-        <section id="video_side">
-            <div class="video_side_in">
+        <section id="blog_side">
+            <div class="blog_side_in">
                 <div class="search side_bar_sec">
                     <h3 class="blog_title">
                         search
