@@ -39,6 +39,7 @@ ul.menu-items li {
 	flex: 1;
 	text-align:center;
 	line-height:16px;
+	position: relative;
 }
 ul.menu-items li:hover {
 	color:yellow;
@@ -48,7 +49,6 @@ ul.menu-items li a {
 	color: inherit;
 	display: block;
 }
-
 /* ==================================== My Card ======================================= */
 .my-card {
 	width: 100%;

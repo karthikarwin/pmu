@@ -73,7 +73,11 @@
                         	<a href="blog.php">blog</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="index.php">events & gallery</a>	
+                        	<a href="index.php">events & gallery</a>
+                            <ul class="sub-menu">
+                                <li><a href="events.php">Events</a></li>
+                                <li><a href="gallery.php">Gallery</a></li>
+                            </ul>	
                         </li>
                         <li class="menu-item">
                         	<a href="video.php">training videos</a>	

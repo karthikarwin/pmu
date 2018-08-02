@@ -133,6 +133,8 @@ p {
 	line-height:14px;
 	text-transform:uppercase;
 	font-size: 14px;
+	position: relative;
+	transition: all 0.4s ease-in-out;
 }
 .main-menu li:last-child {
 	border-right: 0px;
@@ -140,6 +142,39 @@ p {
 .main-menu li a {
 	color: inherit;
 	text-decoration:none;
+}
+ul.main-menu li ul.sub-menu {
+	position: absolute;
+	display: block;
+	left: 0;
+	padding: 0;
+	top: 57px;
+	opacity: 0;
+	z-index: -1;
+	width: 100%;
+	text-align: left;
+	transition: all 0.4s ease-in-out;
+}
+.main-menu ul.sub-menu li {
+	display: block !important;
+	width: 100% !important;
+	background-color: #f36301;
+	padding: 10px 15px;
+	cursor: pointer;
+	border-right: none;
+	border-bottom: 1px solid #ff9247;
+}
+.main-menu ul.sub-menu li a {
+	display: block;
+}
+.main-menu li:hover ul.sub-menu {
+	top: 27px;
+	opacity: 1;
+	z-index: 100;
+	transition: all 0.4s ease-in-out;
+}
+.main-menu ul.sub-menu li:hover {
+	background-color: #f7751d;
 }
 .slider {
 	height: 450px;
@@ -464,7 +499,8 @@ footer {
 	padding: 30px 0px;
 }
 .blog_card {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #eee;
 }
 .blog_img {
 	width: 100%;
@@ -916,10 +952,7 @@ section#myteam, #whyus {
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
 }
-#video_main .video {
-	width: 33.33%;
-}
-#video_main {
+#video_main, #gallery_main {
 	width: 75%;
 	display: inline-block;
 	vertical-align: top;
@@ -935,7 +968,7 @@ section#myteam, #whyus {
 	box-sizing: border-box;
 	padding: 0px 0px 30px 10px;
 }
-#video_main .video {
+#video_main .video, #gallery_main .album {
 	width: 45%;
     margin: 1.5%;
     border-radius: 10px;
@@ -986,6 +1019,10 @@ section#myteam, #whyus {
 	font-style: italic;
 	font-weight: 100;
 	width: 90%;
+}
+
+#completed-events .event {
+	margin-bottom: 30px;
 }
 
 
