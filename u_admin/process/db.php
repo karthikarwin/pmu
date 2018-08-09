@@ -1,18 +1,10 @@
 <?php
+	$whitelist= array('127.0.0.1', '::1');
 
-/* $u_host = "unikerz.aakkamcreations.com";
-$u_user = "unikerz_db";
-$u_pwd = "Uni1kerz@1"; */
-
-$u_host = "localhost";
-$u_user = "root";
-$u_pwd = "";
-
-$db_name = "unikerz";
-
-$conn = mysqli_connect($u_host, $u_user, $u_pwd, $db_name);
-if (!$conn) {
-	die(mysqli_error());
-} else {
-}
+	if(in_array($_SERVER['REMOTE_ADDR'],$whitelist)){
+		$conn = mysqli_connect('localhost','root','', 'unikerz') or die('cannot connect to the server');
+	}
+	else{
+		$conn = mysqli_connect('unikerz.aakkamcreations.com','unikerz_db','Uni1kerz@1', 'unikerz') or die('cannot connect to the server');
+	}
 ?>

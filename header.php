@@ -64,7 +64,7 @@
                         	<a href="about.php">about us</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="training.php">training</a>	
+                        	<a href="training-video.php">training</a>	
                         </li>
                         <li class="menu-item">
                         	<a href="index.php">other services</a>	

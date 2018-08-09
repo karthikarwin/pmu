@@ -24,7 +24,6 @@
                 $query = "SELECT * FROM posts";
 
                 $exec = mysqli_query($conn, $query);
-
                 while( $fetch = mysqli_fetch_array($exec) ) {
                     $date = date_create($fetch['u_date']);
             ?>
