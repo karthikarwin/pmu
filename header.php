@@ -22,25 +22,25 @@
             <div class="u_wrapper">
                 <div class="u_header_left">
                   <p>Turning big ideas into great products</p>
-                  <p><i class="fas fa-envelope"></i> unikerz@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +91 7200 214 742</p>
+                  <p><i class="fas fa-envelope"></i> unikerztechnologies@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 044-4852 7312, 9940988811</p>
                 </div>
                 <div class="u_header_right">
                     <ul class="soc_icons">
                         <li class="icon">
-                            <i class="fab fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/unikerz"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li class="icon">
-                            <i class="fab fa-twitter"></i>
+                        <a href="https://www.twitter.com/unikerz"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="icon">
-                            <i class="fab fa-linkedin-in"></i>
+                            <a href="https://www.linkedin.com/unikerz"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                         <li class="icon">
-                            <i class="fab fa-google-plus-g"></i>
+                            <a href="https://www.plus.google.com/unikerz"><i class="fab fa-google-plus-g"></i></a>
                         </li>
                         <li class="icon">
-                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/unikerz"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -64,16 +64,16 @@
                         	<a href="about.php">about us</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="training-video.php">training</a>	
+                        	<a href="training.php">training</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="index.php">other services</a>	
+                        	<a href="services.php">other services</a>	
                         </li>
                         <li class="menu-item">
                         	<a href="blog.php">blog</a>	
                         </li>
                         <li class="menu-item">
-                        	<a href="index.php">events & gallery</a>
+                        	<a>events & gallery</a>
                             <ul class="sub-menu">
                                 <li><a href="events.php">Events</a></li>
                                 <li><a href="gallery.php">Gallery</a></li>

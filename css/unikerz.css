@@ -41,6 +41,22 @@ src: local('Akrobat ExtraBold'), url('Akrobat-ExtraBold.woff') format('woff');
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Conv_Akrobat-SemiBold';
+	src: url('fonts/Akrobat-SemiBold.eot');
+	src: local('☺'), url('fonts/Akrobat-SemiBold.woff') format('woff'), url('fonts/Akrobat-SemiBold.ttf') format('truetype'), url('fonts/Akrobat-SemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Akrobat-ExtraBold';
+	src: url('fonts/Akrobat-ExtraBold.eot');
+	src: local('☺'), url('fonts/Akrobat-ExtraBold.woff') format('woff'), url('fonts/Akrobat-ExtraBold.ttf') format('truetype'), url('fonts/Akrobat-ExtraBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 html {
 	margin: 0;
@@ -1024,6 +1040,98 @@ section#myteam, #whyus {
 #completed-events .event {
 	margin-bottom: 30px;
 }
+#tr-ins {
+	width: 60%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+}
+#tr-form {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+}
+.tr-form {
+	background-color: #ffcb01;
+	padding: 20px 20px;
+}
+.tr-form h2 {
+	font-family: 'Conv_Akrobat-SemiBold';
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+p.btn_who {
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+	width: 50%;
+}
+.btn_who input {
+	display: block;
+	width: 100%;
+}
+#register-form {
+	width: 100%;
+	padding: 30px 0px;
+}
+#register-form input {
+	width: 100%;
+	margin-bottom: 16px;
+	border: none;
+	padding: 5px 10px;
+}
+#register-form select {
+	width: 100%;
+	margin-bottom: 16px;
+	border: none;
+	padding: 5px 10px;
+}
 
-
+#register-form .submit {
+	background-color: #dbae01;
+	color: #8a6501;
+	padding: 6px 20px;
+	border: none;
+}
+#register-form .submit:hover {
+	background-color: #dab216;
+	color: #8a6501;
+}
+.btnn {
+	width: 100%;
+	text-align: right;
+}
+button.tabb {
+	padding: 6px 15px;
+	background-color: #fff;
+	color: #b9b9b9;
+	font-weight: 500;
+	font-size: 30px;
+	border: none;
+	margin-right: -4px;
+	cursor: pointer;
+}
+button.tabb:hover {
+	background-color: #f36301;
+	color: #fff;
+}
+.fresher {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #666;
+	padding: 30px 5px;
+	line-height: 30px;
+}
+.fresher h2 {
+	color: #f36301;
+	font-size: 40px;
+	font-family: 'Conv_Akrobat-ExtraBold';
+	margin-bottom: 15px;
+}
+.method {
+	margin: 20px 0px;
+}
 

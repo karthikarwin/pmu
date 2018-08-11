@@ -4,7 +4,7 @@ include_once('./header.php');
     <section id="u_slider">
     	<div class="slider home-slider">
         	<div class="site-heading">
-                <h6>best industrial service provider</h6>
+                <h6>DREAM,EXPLORE &amp; DISCOVER..!</h6>
                 <h2>industrial learnings</h2>
                 <p>We provides always our best best industrial solution for our clients and always try to achieve our client’s trust and satisfaction.</p>
             </div>
@@ -19,12 +19,15 @@ include_once('./header.php');
                 	<img src="img/home2.png" alt="intro">
                 </div>
                 <div class="intro-1-para">
-                	<p>The ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis em aperiam, eaque ipsa quae ab illo inventore </p>
+                	<p>Unikerz is the knowledge source for Engineers &amp; Technicians,
+                    started by three well-known automation firms in Chennai with the aim of providing
+                    quality training to the engineers in the field of core industries.</p>
                 </div>
             </div>
             <div class="intro-2">
-            	<p>The ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore
-mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis,we he ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa e ab illo inventore veritatisqua</p>
+            	<p> We will train the
+                    engineers to become educated in wider engineering community. Also we will support
+                    you at every stage of your proficient journey.</p>
             </div>
         </div>
         <div class="intro2">
